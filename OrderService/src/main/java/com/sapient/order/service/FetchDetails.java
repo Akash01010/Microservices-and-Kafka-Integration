@@ -41,8 +41,8 @@ public class FetchDetails {
 	@GetMapping("/fetch-order-details/customer_id/{cust_id}/product_id/{prod_id}")
 	  public OrderDetails convertCurrencyFeign(@PathVariable String cust_id, @PathVariable String prod_id) {
 		
-		OrderDetails customer = customerProxy.retrieveCustomerDetails(cust_id);
-		OrderDetails product = productProxy.retrieveProductDetails(prod_id);
+		//OrderDetails customer = customerProxy.retrieveCustomerDetails(cust_id);
+		//OrderDetails product = productProxy.retrieveProductDetails(prod_id);
 
 //	    OrderDetails myOrder = new OrderDetails(customer.getCustomer_id(),product.getProduct_id(),1,230.66);
 		OrderDetails myOrder = new OrderDetails(1L,1L,1,230.66);
