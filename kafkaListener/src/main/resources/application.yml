@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:8888
+
+app:
+  topic:
+    example: order
